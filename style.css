@@ -46,7 +46,7 @@
     padding: 20px;
     color: rgb(255, 255, 255);
     text-decoration:double;
-    margin: 5px;
+    margin: 3px;
    
   }
   nav ul li:hover {
@@ -79,7 +79,7 @@ body {
     margin-top: 2em;
     min-height: 100vh;
 
-    background-image: url('./imagenes/banners/banner1.jpg');*/
+    background-image: url('./imagenes/banners/banner1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -90,10 +90,12 @@ body {
 #banner h1 {
     position: absolute;
     top: 25%;
-    left: 15%;
+    left: 80%;
     transform: translate(-50%, -50%);
     font-size: 2.5em;
     margin: 0px;
+  
+    color: rgb(221, 171, 183);
  
     font-family: Helvetica;
 }
@@ -101,15 +103,20 @@ body {
 #subtitle {
     position: absolute;
     bottom: 10%;
-    left: 0;
+    left: 5%;
+    top: 35%;
 
     padding-left: 2em;
-    width: 25%;
+    width: 35%;
     font-family: Helvetica;
+    justify-content: center;
+  
 }
 
 #subtitle p {
-    color: white;
+    color:rgba(133, 130, 130, 0.966);
+    left: 5%;
+    justify-content: center;
 }
 
 
@@ -122,16 +129,18 @@ section#servicios {
     flex-flow: row nowrap;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    background-color: darkgray;
 }
 
 #servicios > div:nth-child(1) {
-    border-right: 1px solid black;
+    /*border-right: 1px solid black;*/
     flex-basis: calc(60% - 1px);
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: Helvetica;
 }
 
 #servicios > div:nth-child(1) > * {
@@ -148,7 +157,7 @@ section#servicios {
 }
 
 #servicios .card {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     max-width: 300px;
 }
 
@@ -157,50 +166,26 @@ section#servicios {
 }
 
 #servicios .card p {
-    text-align: center;
+    text-align: justify;
+    
+    font-family: Helvetica;
 }
 
 
-/* Seccion: Equipo */
+/* Seccion: productos */
 
-#equipo {
+#productos {
     border-bottom: 1px solid black;
     min-height: 100vh;
-    background-color: aquamarine;
+    background-color: rgb(221, 171, 183);
 }
+.ajusteprod {
 
-#equipo img {
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-
-#equipo h2 {
-    margin: 0px;
-    padding-top: 1em;
-}
-
-#equipo h2, #equipo h3, #equipo p {
-    text-align: center;
-}
-
-.container-miembros {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
-}
-
-.container-miembros > div {
-    flex-basis: 30%;
-    border: 1px solid black;
-    margin-bottom: 2em;
-    border-radius: 20px;
-
-    display: flex;
-    flex-flow: column nowrap;
-}
+    width: 20%;
+    margin: 10px;
+    border: solid 2px black;
+  }
+  
 
 
 /* Seccion: Contacto */
@@ -232,13 +217,57 @@ section#contacto img {
 
 #contacto-container {
     flex-basis: 30%;
-
+text-size-adjust: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: space-around;
+    
 }
 
 #contacto-container ul {
     text-align: center;
 }
+
+/*TEXTO*/
+.textorelieveprincipal {
+    text-align: left;
+    font-family: system-ui;
+    font-weight: bold;
+    font-size: 25px;
+    background: #202020;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    /*color: transparent;*/
+    font-family: Helvetica;
+    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.4), 0px -1px 1px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .textorelievesecundaria {
+    text-align: left;
+
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Helvetica;
+    background: #202020;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+  
+    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.4), 0px -1px 1px rgba(0, 0, 0, 0.3);
+  }
+  
+  .textorelieveparrafo {
+    text-align: right;
+
+    font-size: 27px;
+    background: #202020;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    /*color: transparent;*/
+    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.4), 0px -1px 1px rgba(0, 0, 0, 0.3);
+  }
+  
+  

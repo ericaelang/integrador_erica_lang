@@ -50,7 +50,7 @@
    
   }
   nav ul li:hover {
-    background: rgba(224, 151, 218, 0.836);
+    background: rgb(255 127 242 / 20%);
   }
   
 .logo {
@@ -199,6 +199,7 @@ section#contacto {
 section#contacto h2 {
     text-align: right;
     color: black;
+    font-family: Helvetica;
 }
 
 section#contacto a {
@@ -221,8 +222,9 @@ section#contacto
 section#contacto
 #form-contacto {
 
-    flex-basis: 40%;
+    flex-basis: 30%;
     display: flex;
+    background-color:rgba(133, 130, 130, 0.966);
    
 }
 #contacto-container {
@@ -233,12 +235,18 @@ text-size-adjust: 10px;
     justify-content: space-around;
     background-color:rgba(133, 130, 130, 0.966);
     
+    
 }
 
 #contacto-container ul {
-    text-align: center;
+    text-align: left;
 }
 
+#contacto-container ul li {
+  float: left;
+  font-family: Helvetica;
+  font-size: 10px;
+}
 /*TEXTO*/
 .textorelieveprincipal {
     /*text-align: left;*/
@@ -281,4 +289,14 @@ text-size-adjust: 10px;
     text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.4), 0px -1px 1px rgba(0, 0, 0, 0.3);
   }
   
+  /* FOOTER */
+
+    footer {
+        background-color: rgb(45, 44, 44);
+        color: aliceblue;
+        padding: 0.5em;
+
+        text-align: center;
+        width: calc(100% - 1em);
+    }
   

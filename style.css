@@ -21,7 +21,7 @@
 
     position: fixed;
     top: 0px;
-    width: calc(100% - 1em);
+    width: 100%;
 
     z-index: 1;
 }
@@ -336,6 +336,6 @@ text-size-adjust: 10px;
         padding: 0.5em;
 
         text-align: center;
-        width: calc(100% - 1em);
+        width: 100%;
     }
   
